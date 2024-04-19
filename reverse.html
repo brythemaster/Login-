@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    width: auto;
+    background-color: lightblue;
+    background-image: url('img2.jpg');
+
+}
+ div{
+    border-radius: 30px;
+ }
+
+.registration-container {
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10Spx;
+    background-color: #8AA899;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+select {
+    width: 450px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+
+#button1{
+    width: 20%;
+    background-color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#button1:hover{
+    box: shadow 0.4s;
+    background-color: lightblue;
+
+}
+</style>
+</head>
+<body>
+<div class="registration-container">
+        <h2 style="color:blue">Register</h2>
+            <label>Full Name:</label>
+            <input type="text" name="full_name" id="Full Name" placeholder="Full Name" required><br>
+            <label>Email:</label>
+            <input type="email" name="email" id="Email" placeholder="Email" required><br>
+            <label>Phone Number:</label>
+            <input type="tel" name="phone_number" id="Phone Number" placeholder="Phone Number"required><br>
+            <label>Date of Birth:</label>
+            <input type="date" name="date_of_birth" id="DOB" required><br>
+            <label>Gender:</label>
+            <select name="gender" id="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select><br>
+            <label>Password:</label>
+            <input type="password" name="password" id="password" placeholder="Password" required><br>
+            <label>Confirm Password:</label>
+            <input type="password" name="Confirm password" id="Confirm password" placeholder="Confirm Password" required><br>
+            <button type="submit" id="button1" name="register">Register</button><br><br>
+        </form>
+</body>
+</html>
+
